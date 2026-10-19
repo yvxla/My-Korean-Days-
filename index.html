@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f7e8ed">
+<title>my Korean days ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+:root{--pink:#e8a9bd;--pink2:#f8e8ee;--green:#dcebdc;--green2:#f1f7f0;--ink:#4d4b4b;--muted:#898181;--paper:#fffdfb;--line:#eadde0;--rose:#b76b86;--shadow:0 8px 24px #7e526014}
+*{box-sizing:border-box}body{margin:0;background:#f8f3f0;color:var(--ink);font-family:Nunito,"Noto Sans JP","Noto Sans KR",sans-serif;font-size:14px}
+button,input,textarea,select{font:inherit;color:inherit}button{cursor:pointer;border:0}
+.app{max-width:760px;margin:auto;min-height:100dvh;background:#fffaf8;box-shadow:0 0 40px #4d33330c;padding-bottom:88px}
+header{padding:24px 20px 16px;background:linear-gradient(135deg,#f9e7ed,#eef5ec);border-bottom:1px solid #f0e1e5;position:relative;overflow:hidden}
+.topline{display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:2px;color:#8f7880;font-weight:800}
+h1{font-size:28px;line-height:1.1;margin:15px 0 7px;letter-spacing:-1px;color:#765663}
+h1 span{color:#b76b86}.subtitle{color:#8c7c80;font-size:12px}
+.header-stickers{position:absolute;right:22px;top:48px;font-size:30px;opacity:.72;transform:rotate(10deg)}
+.progress-wrap{margin-top:18px;background:#ffffffa6;border:1px solid #fff;border-radius:14px;padding:12px 14px}
+.progress-label{display:flex;justify-content:space-between;font-size:11px;color:#8a747d;margin-bottom:8px;font-weight:800}
+.progress{height:7px;border-radius:20px;background:#f2dce4;overflow:hidden}.progress>div{height:100%;width:0;background:linear-gradient(90deg,#e8a9bd,#b5d3b7);border-radius:20px;transition:width .25s}
+main{padding:18px 16px}
+.panel{display:none}.panel.active{display:block;animation:fade .2s ease}@keyframes fade{from{opacity:.5;transform:translateY(4px)}to{opacity:1;transform:none}}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:8px;margin:4px 2px 14px}.eyebrow{font-size:10px;letter-spacing:2px;color:#b17a8d;font-weight:800}.section-head h2{margin:3px 0 0;font-size:22px;color:#725561}.tiny{font-size:11px;color:var(--muted)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:15px;margin-bottom:12px;box-shadow:var(--shadow)}
+.card.green{background:#f6faf4;border-color:#e0ecde}.card.pink{background:#fff6f8;border-color:#f0dce3}
+.card-title{display:flex;align-items:center;justify-content:space-between;font-weight:800;margin-bottom:10px;color:#795d68}.pill{font-size:10px;border-radius:99px;padding:5px 9px;background:#f8e7ed;color:#a75f7c;font-weight:800}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:#fff;border:1px solid var(--line);border-radius:15px;padding:13px}.stat strong{display:block;font-size:22px;color:#a96d83}.stat small{color:#97868c}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.full{grid-column:1/-1}
+label{display:block;font-size:11px;font-weight:800;color:#907983;margin:0 0 5px}
+input,textarea,select{width:100%;border:1px solid #eadde1;background:#fff;border-radius:11px;padding:11px 12px;outline:none;min-width:0}
+input:focus,textarea:focus,select:focus{border-color:#d49aae;box-shadow:0 0 0 3px #f8e8ee}textarea{resize:vertical;min-height:84px}
+.btn{border-radius:11px;padding:11px 14px;background:#e9b2c4;color:#6b4353;font-weight:800}.btn.secondary{background:#e7f0e4;color:#527057}.btn.ghost{background:#fff;border:1px solid var(--line);color:#8c6c79}.btn.small{padding:7px 10px;font-size:11px}.btn.danger{background:#fff0f0;color:#a05252}.form-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.list{display:grid;gap:9px}.item{background:#fff;border:1px solid #eee1e4;border-radius:13px;padding:12px;display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.item-main{min-width:0;flex:1}.item strong{display:block;color:#705661;margin-bottom:4px;overflow-wrap:anywhere}.item p{margin:4px 0;color:#87777d;white-space:pre-wrap;overflow-wrap:anywhere}.item .meta{font-size:10px;color:#a28f95}.item-actions{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}.empty{text-align:center;padding:20px 10px;color:#a08e94;font-size:12px}
+.checkline{display:flex;align-items:flex-start;gap:9px;padding:9px 0;border-bottom:1px dashed #eadfe2}.checkline:last-child{border:0}.checkline input{width:17px;height:17px;margin:1px 0 0;accent-color:#c6819a}.checkline.done span{text-decoration:line-through;color:#b0a2a6}
+nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(760px,100%);padding:8px 6px calc(8px + env(safe-area-inset-bottom));background:#fffdfbf2;backdrop-filter:blur(12px);border-top:1px solid #eddee2;display:grid;grid-template-columns:repeat(6,1fr);z-index:5}
+nav button{background:transparent;color:#a08d94;font-size:9px;font-weight:800;padding:5px 1px;border-radius:11px;display:flex;flex-direction:column;gap:3px;align-items:center}nav button .ico{font-size:19px;line-height:1.2}nav button.active{background:#f9e8ee;color:#a65f7a}
+.hero-note{font-size:12px;line-height:1.7;color:#8b777f}.sticker{font-size:20px}
+.photo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.photo{border-radius:13px;overflow:hidden;background:#f7e9ee;border:1px solid #eadde1}.photo img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}.photo .photo-caption{padding:8px;font-size:11px;overflow-wrap:anywhere}.photo .photo-actions{padding:0 8px 8px}
+.disclaimer{font-size:11px;line-height:1.7;color:#88787d;background:#f8f4ed;border-radius:12px;padding:11px}.countdown{display:flex;align-items:center;gap:14px}.countnum{font-size:36px;font-weight:800;color:#ae6d85;line-height:1}.countbox{background:#fff;border:1px solid #f0dce3;border-radius:15px;padding:14px;min-width:92px;text-align:center}.countbox small{display:block;color:#9c858e;font-size:10px;margin-top:5px}
+footer{text-align:center;padding:16px;color:#b09da3;font-size:10px}
+@media(min-width:600px){main{padding:24px}.grid2{grid-template-columns:repeat(4,1fr)}.photo-grid{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+  <div class="topline"><span>MY LITTLE SCHOOL PLANNER</span><span>서울 · SEOUL</span></div>
+  <h1>my <span>Korean</span><br>days ♡</h1>
+  <div class="subtitle">나의 꿈을 향해 · 小さな一歩を、毎日</div>
+  <div class="header-stickers">♡ ✿</div>
+  <div class="progress-wrap">
+    <div class="progress-label"><span>오늘의 미션 · 今日のミッション</span><span id="missionProgress">0 / 0</span></div>
+    <div class="progress"><div id="missionBar"></div></div>
+  </div>
+</header>
+<main>
+<section class="panel active" id="home">
+  <div class="section-head"><div><div class="eyebrow">WELCOME BACK ♡</div><h2>안녕, future me!</h2></div><span class="sticker">🌷</span></div>
+  <div class="card pink">
+    <div class="card-title">오늘의 한마디 <span class="pill" id="todayDate"></span></div>
+    <div style="font-size:19px;font-weight:800;color:#a66c83">천천히, 하지만 꾸준히</div>
+    <div class="hero-note">ゆっくりでも、続けていこう<br>今日の小さな一歩も、未来につながってるよ</div>
+  </div>
+  <div class="grid2">
+    <div class="stat"><strong id="streakStat">0日</strong><small>連続ミッション</small></div>
+    <div class="stat"><strong id="studyStat">0分</strong><small>勉強した時間</small></div>
+    <div class="stat"><strong id="vocabStat">0語</strong><small>単語帳</small></div>
+    <div class="stat"><strong id="savedStat">¥0</strong><small>夢貯金</small></div>
+  </div>
+  <div class="card green" style="margin-top:12px">
+    <div class="card-title">오늘의 미션 <span class="pill">TODAY</span></div>
+    <div id="homeMissions"></div>
+    <button class="btn secondary" style="width:100%;margin-top:9px" onclick="showPanel('missions')">ミッションを管理する →</button>
+  </div>
+  <div class="card">
+    <div class="card-title">나의 D-DAY <span class="pill">MY DREAM</span></div>
+    <div id="homeCountdown" class="hero-note">目標の日を設定してね ♡</div>
+    <button class="btn ghost small" style="margin-top:10px" onclick="showPanel('dream')">夢のページへ →</button>
+  </div>
+  <div class="disclaimer">♡ このアプリは個人用の記録ツールです。韓国の高校への入学条件、ビザ、費用、募集時期などは学校や制度によって異なります。必ず学校・教育機関・公的機関の最新情報で確認しよう</div>
+</section>
+
+<section class="panel" id="study">
+  <div class="section-head"><div><div class="eyebrow">STUDY WITH LOVE</div><h2>한국어 공부</h2></div><span class="sticker">📚</span></div>
+  <div class="card pink">
+    <div class="card-title">공부 기록 · 勉強記録</div>
+    <form id="studyForm">
+      <div class="formgrid">
+        <div><label for="studyDate">日付</label><input id="studyDate" type="date" required></div>
+        <div><label for="studyMinutes">勉強時間（分）</label><input id="studyMinutes" type="number" min="1" max="1440" placeholder="20" required></div>
+        <div class="full"><label for="studySubject">勉強したこと</label><input id="studySubject" placeholder="例：ハングル、単語、文法" required></div>
+        <div class="full"><label for="studyMemo">メモ（任意）</label><textarea id="studyMemo" placeholder="今日覚えたこと、気づいたこと"></textarea></div>
+      </div>
+      <div class="form-actions"><button class="btn" type="submit">記録を保存 ♡</button></div>
+    </form>
+  </div>
+  <div class="card">
+    <div class="card-title">단어장 · 単語帳 <span class="pill" id="wordCount">0 WORDS</span></div>
+    <form id="wordForm">
+      <div class="formgrid">
+        <div><label for="wordKo">韓国語</label><input id="wordKo" placeholder="안녕하세요" required></div>
+        <div><label for="wordJa">日本語の意味</label><input id="wordJa" placeholder="こんにちは" required></div>
+        <div class="full"><label for="wordMemo">例文・読み方（任意）</label><input id="wordMemo" placeholder="発音や使い方のメモ"></div>
+      </div>
+      <div class="form-actions"><button class="btn secondary" type="submit">単語を追加 ＋</button></div>
+    </form>
+    <div id="wordList" class="list" style="margin-top:12px"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">최근 공부 · 最近の勉強</div>
+    <div id="studyList" class="list"></div>
+  </div>
+</section>
+
+<section class="panel" id="school">
+  <div class="section-head"><div><div class="eyebrow">YOUR NEXT CHAPTER</div><h2>나의 학교</h2></div><span class="sticker">🎓</span></div>
+  <div class="disclaimer" style="margin-bottom:12px">進学情報は未確認の内容を断定せず、調べた日・出典・確認状況を自分で記録するためのノートです。入学資格、必要書類、学費、在留資格などは、学校・教育庁・大使館等の公式案内で最新情報を確認してください</div>
+  <div class="card green">
+    <div class="card-title">학교 조사 노트 · 学校調べノート</div>
+    <form id="schoolForm">
+      <div class="formgrid">
+        <div class="full"><label for="schoolName">学校名・候補</label><input id="schoolName" placeholder="学校名や調べたい学校" required></div>
+        <div><label for="schoolArea">地域</label><input id="schoolArea" placeholder="例：ソウル"></div>
+        <div><label for="schoolDate">確認した日</label><input id="schoolDate" type="date"></div>
+        <div class="full"><label for="schoolTopic">調べた項目</label><select id="schoolTopic"><option>入学条件</option><option>必要書類</option><option>学費・費用</option><option>寮・住まい</option><option>授業・学校生活</option><option>募集時期</option><option>その他</option></select></div>
+        <div class="full"><label for="schoolStatus">確認状況</label><select id="schoolStatus"><option>未確認</option><option>公式情報を確認中</option><option>公式情報で確認済み</option><option>学校へ問い合わせ予定</option></select></div>
+        <div class="full"><label for="schoolSource">公式サイト・出典URL（任意）</label><input id="schoolSource" type="url" placeholder="https://..."></div>
+        <div class="full"><label for="schoolMemo">メモ・次に確認すること</label><textarea id="schoolMemo" placeholder="出典で確認できた内容と、まだ不明な点を分けて書こう"></textarea></div>
+      </div>
+      <div class="form-actions"><button class="btn secondary" type="submit">調べたことを保存 ＋</button></div>
+    </form>
+  </div>
+  <div class="card">
+    <div class="card-title">준비 체크리스트 · 進学準備</div>
+    <div id="prepList"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">조사 기록 · 調査記録</div>
+    <div id="schoolList" class="list"></div>
+  </div>
+</section>
+
+<section class="panel" id="dream">
+  <div class="section-head"><div><div class="eyebrow">DEAR FUTURE ME</div><h2>나의 꿈 노트</h2></div><span class="sticker">💌</span></div>
+  <div class="card pink">
+    <div class="card-title">D-DAY · 目標カウントダウン</div>
+    <form id="goalForm">
+      <div class="formgrid">
+        <div class="full"><label for="goalName">目標の名前</label><input id="goalName" placeholder="例：韓国高校について家族と相談する"></div>
+        <div class="full"><label for="goalDate">目標の日</label><input id="goalDate" type="date"></div>
+      </div>
+      <div class="form-actions"><button class="btn" type="submit">目標を保存 ♡</button><button class="btn ghost" id="clearGoal" type="button">解除</button></div>
+    </form>
+    <div id="countdownDisplay" style="margin-top:14px"></div>
+  </div>
+  <div class="card">
+    <div class="card-title">꿈 일기 · 夢日記</div>
+    <form id="diaryForm">
+      <div class="formgrid">
+        <div><label for="diaryDate">日付</label><input id="diaryDate" type="date" required></div>
+        <div><label for="diaryMood">今日の気分</label><select id="diaryMood"><option>🌷 わくわく</option><option>💗 幸せ</option><option>🌿 穏やか</option><option>☁️ ちょっと疲れた</option><option>🌙 考えごと</option></select></div>
+        <div class="full"><label for="diaryTitle">タイトル</label><input id="diaryTitle" placeholder="今日の夢のかけら" required></div>
+        <div class="full"><label for="diaryText">日記</label><textarea id="diaryText" placeholder="韓国でしてみたいこと、今日頑張ったこと…" required></textarea></div>
+        <div class="full"><label for="diaryPhoto">写真（任意）</label><input id="diaryPhoto" type="file" accept="image/*"><div class="tiny">写真はブラウザ内に保存されます。容量が大きい写真は自動で縮小します</div></div>
+      </div>
+      <div class="form-actions"><button class="btn" type="submit">思い出を保存 ♡</button></div>
+    </form>
+  </div>
+  <div class="card">
+    <div class="card-title">memory album · 思い出アルバム</div>
+    <div id="diaryList" class="list"></div>
+  </div>
+</section>
+
+<section class="panel" id="money">
+  <div class="section-head"><div><div class="eyebrow">LITTLE BY LITTLE</div><h2>저금 노트</h2></div><span class="sticker">🐰</span></div>
+  <div class="card green">
+    <div class="card-title">나의 꿈 저금 · 夢貯金</div>
+    <form id="budgetForm">
+      <div class="formgrid">
+        <div class="full"><label for="targetAmount">目標金額（円）</label><input id="targetAmount" type="number" min="0" step="100" placeholder="50000"></div>
+      </div>
+      <div class="form-actions"><button class="btn secondary" type="submit">目標金額を保存</button></div>
+    </form>
+    <div style="margin-top:14px" class="grid2">
+      <div class="stat"><strong id="moneyTotal">¥0</strong><small>貯金した金額</small></div>
+      <div class="stat"><strong id="moneyPercent">0%</strong><small>目標まで</small></div>
+    </div>
+    <div class="progress" style="margin-top:12px"><div id="moneyBar"></div></div>
+  </div>
+  <div class="card">
+    <div class="card-title">입출금 기록 · 入金記録</div>
+    <form id="moneyForm">
+      <div class="formgrid">
+        <div><label for="moneyDate">日付</label><input id="moneyDate" type="date" required></div>
+        <div><label for="moneyAmount">金額（円）</label><input id="moneyAmount" type="number" min="1" step="1" placeholder="500" required></div>
+        <div class="full"><label for="moneyNote">メモ</label><input id="moneyNote" placeholder="おこづかい、貯金など" required></div>
+      </div>
+      <div class="form-actions"><button class="btn secondary" type="submit">入金を記録 ＋</button></div>
+    </form>
+    <div id="moneyList" class="list" style="margin-top:12px"></div>
+  </div>
+</section>
+
+<section class="panel" id="missions">
+  <div class="section-head"><div><div class="eyebrow">ONE STEP EVERY DAY</div><h2>오늘의 미션</h2></div><span class="sticker">⭐</span></div>
+  <div class="card pink">
+    <div class="card-title">오늘 할 일 · 今日やること</div>
+    <form id="missionForm">
+      <div class="formgrid">
+        <div class="full"><label for="missionText">ミッション</label><input id="missionText" placeholder="例：韓国語を10分勉強する" required></div>
+        <div class="full"><label for="missionDate">日付</label><input id="missionDate" type="date" required></div>
+      </div>
+      <div class="form-actions"><button class="btn" type="submit">ミッションを追加 ＋</button><button class="btn ghost" type="button" id="addDefaults">おすすめを追加</button></div>
+    </form>
+  </div>
+  <div class="card">
+    <div class="card-title">today's checklist <span class="pill" id="missionCount">0 / 0</span></div>
+    <div id="missionList"></div>
+  </div>
+  <div class="card green">
+    <div class="card-title">꾸준함이 힘이야 · 続ける力</div>
+    <div class="hero-note">連続記録は「その日に設定したミッションをすべて完了した日」をもとに計算します。休む日があっても大丈夫、また始められるよ ♡</div>
+    <div class="grid2" style="margin-top:10px">
+      <div class="stat"><strong id="streakBig">0日</strong><small>現在の連続記録</small></div>
+      <div class="stat"><strong id="bestStreak">0日</strong><small>最長記録</small></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>made with dreams & little steps ♡ 오늘도 수고했어</footer>
+<nav>
+  <button class="active" data-panel="home"><span class="ico">⌂</span>HOME</button>
+  <button data-panel="study"><span class="ico">✎</span>STUDY</button>
+  <button data-panel="school"><span class="ico">⌑</span>SCHOOL</button>
+  <button data-panel="dream"><span class="ico">♡</span>DREAM</button>
+  <button data-panel="money"><span class="ico">₩</span>SAVE</button>
+  <button data-panel="missions"><span class="ico">☑</span>MISSION</button>
+</nav>
+</div>
+<script>
+const KEY='myKoreanDays_v1';
+const today=()=>new Date().toLocaleDateString('sv-SE');
+const blank=()=>({words:[],studies:[],schools:[],prep:{},diaries:[],goal:{name:'',date:''},target:0,money:[],missions:[],bestStreak:0});
+let state;
+try{state={...blank(),...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch(e){state=blank()}
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const yen=n=>'¥'+Number(n||0).toLocaleString('ja-JP');
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){alert('保存容量がいっぱいのようです。写真を減らすか、データをエクスポートしてください')}} 
+function showPanel(id){document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.panel===id));window.scrollTo({top:0,behavior:'smooth'});render()}
+window.showPanel=showPanel;
+document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>showPanel(b.dataset.panel)));
+function removeItem(key,id){if(!confirm('この記録を削除しますか？'))return;state[key]=state[key].filter(x=>x.id!==id);save();render()}
+function listEmpty(text='まだ記録がないよ ♡'){return `<div class="empty">${text}</div>`}
+function calcStreak(){
+ const byDate={};state.missions.forEach(m=>{(byDate[m.date]??=[]).push(m)});
+ let streak=0, cursor=new Date(today()+'T12:00:00');
+ // If today has no missions, start checking from yesterday
+ if(!byDate[today()]||!byDate[today()].length)cursor.setDate(cursor.getDate()-1);
+ for(let i=0;i<370;i++){const d=cursor.toLocaleDateString('sv-SE'),arr=byDate[d];if(arr&&arr.length&&arr.every(m=>m.done))streak++;else break;cursor.setDate(cursor.getDate()-1)}
+ let best=0,run=0;const dates=Object.keys(byDate).sort();let prev=null;
+ for(const d of dates){const complete=byDate[d].length&&byDate[d].every(m=>m.done);if(complete){if(prev){const diff=(new Date(d+'T12:00:00')-new Date(prev+'T12:00:00'))/86400000;run=diff===1?run+1:1}else run=1;best=Math.max(best,run);prev=d}else{run=0;prev=null}}
+ state.bestStreak=Math.max(state.bestStreak||0,best);return {streak,best:state.bestStreak};
+}
+function updateHeader(){
+ const todayM=state.missions.filter(m=>m.date===today()),done=todayM.filter(m=>m.done).length;
+ $('missionProgress').textContent=`${done} / ${todayM.length}`;$('missionBar').style.width=(todayM.length?done/todayM.length*100:0)+'%';
+ $('todayDate').textContent=today();
+ const streak=calcStreak().streak;
+ $('streakStat').textContent=streak+'日';$('studyStat').textContent=state.studies.reduce((s,x)=>s+Number(x.minutes||0),0)+'分';$('vocabStat').textContent=state.words.length+'語';
+ const total=state.money.reduce((s,x)=>s+Number(x.amount||0),0);$('savedStat').textContent=yen(total);
+ $('homeMissions').innerHTML=todayM.length?todayM.map(m=>`<label class="checkline ${m.done?'done':''}"><input type="checkbox" ${m.done?'checked':''} onchange="toggleMission('${m.id}',this.checked)"><span>${esc(m.text)}</span></label>`).join(''):listEmpty('今日のミッションを追加してね ♡');
+ $('homeCountdown').innerHTML=state.goal.date?goalMarkup(): '目標の日を設定してね ♡';
+}
+function goalMarkup(){const diff=Math.ceil((new Date(state.goal.date+'T00:00:00')-new Date(today()+'T00:00:00'))/86400000);let label=diff>0?`あと <b>${diff}日</b>`:diff===0?'오늘은 D-DAY! ♡':'目標の日から '+Math.abs(diff)+'日';return `<div class="countdown"><div class="countbox"><div class="countnum">${diff>0?diff:Math.abs(diff)}</div><small>${diff>=0?'DAYS LEFT':'DAYS PASSED'}</small></div><div><b>${esc(state.goal.name||'MY DREAM')}</b><div class="hero-note">${label}<br>${esc(state.goal.date)}</div></div></div>`}
+function renderStudy(){
+ $('wordCount').textContent=state.words.length+' WORDS';
+ $('wordList').innerHTML=state.words.length?state.words.slice().reverse().map(w=>`<div class="item"><div class="item-main"><strong>${esc(w.ko)} <span style="color:#b78b9b">→</span> ${esc(w.ja)}</strong><p>${esc(w.memo)}</p></div><div class="item-actions"><button class="btn ghost small" onclick="removeItem('words','${w.id}')">削除</button></div></div>`).join(''):listEmpty('単語をひとつ追加してみよう');
+ $('studyList').innerHTML=state.studies.length?state.studies.slice().reverse().map(s=>`<div class="item"><div class="item-main"><strong>${esc(s.subject)} · ${esc(s.minutes)}分</strong><div class="meta">${esc(s.date)}</div><p>${esc(s.memo)}</p></div><div class="item-actions"><button class="btn ghost small" onclick="removeItem('studies','${s.id}')">削除</button></div></div>`).join(''):listEmpty('勉強したらここに記録されるよ');
+}
+const prepItems=['韓国の高校制度について調べる','候補校の公式サイトを探す','留学生・外国籍生徒の入学条件を確認する','必要書類と翻訳・認証条件を確認する','学費・寮・生活費を調べる','家族や先生と相談する','学校・公的機関に質問することを整理する'];
+function renderSchool(){
+ $('prepList').innerHTML=prepItems.map((t,i)=>`<label class="checkline ${state.prep[i]?'done':''}"><input type="checkbox" ${state.prep[i]?'checked':''} onchange="togglePrep(${i},this.checked)"><span>${t}</span></label>`).join('');
+ $('schoolList').innerHTML=state.schools.length?state.schools.slice().reverse().map(s=>`<div class="item"><div class="item-main"><strong>${esc(s.name)} · ${esc(s.topic)}</strong><div class="meta">${esc(s.area||'地域未入力')}　/　${esc(s.date||'確認日未入力')}</div><p><b>状況：</b>${esc(s.status)}<br>${esc(s.memo)}</p>${s.source?`<p><a href="${esc(s.source)}" target="_blank" rel="noopener noreferrer">記録した出典を開く ↗</a></p>`:''}</div><div class="item-actions"><button class="btn ghost small" onclick="removeItem('schools','${s.id}')">削除</button></div></div>`).join(''):listEmpty('学校について調べたことを記録しよう');
+}
+function renderDream(){
+ $('countdownDisplay').innerHTML=state.goal.date?goalMarkup():listEmpty('目標の日を登録すると、ここに表示されるよ');
+ $('diaryList').innerHTML=state.diaries.length?`<div class="photo-grid">${state.diaries.slice().reverse().map(d=>`<div class="photo">${d.photo?`<img src="${d.photo}" alt="日記の写真">`:`<div style="aspect-ratio:1/1;display:grid;place-items:center;font-size:35px">♡</div>`}<div class="photo-caption"><b>${esc(d.title)}</b><br><span class="meta">${esc(d.date)} · ${esc(d.mood)}</span><p>${esc(d.text)}</p></div><div class="photo-actions"><button class="btn ghost small" onclick="removeItem('diaries','${d.id}')">削除</button></div></div>`).join('')}</div>`:listEmpty('写真や夢を残して、自分だけのアルバムにしよう');
+}
+function renderMoney(){
+ const total=state.money.reduce((s,x)=>s+Number(x.amount||0),0),target=Number(state.target||0),pct=target?Math.min(100,Math.round(total/target*100)):0;
+ $('moneyTotal').textContent=yen(total);$('moneyPercent').textContent=pct+'%';$('moneyBar').style.width=pct+'%';
+ $('moneyList').innerHTML=state.money.length?state.money.slice().reverse().map(m=>`<div class="item"><div class="item-main"><strong>+${yen(m.amount)} · ${esc(m.note)}</strong><div class="meta">${esc(m.date)}</div></div><div class="item-actions"><button class="btn ghost small" onclick="removeItem('money','${m.id}')">削除</button></div></div>`).join(''):listEmpty('最初の一歩から始めよう ♡');
+ $('targetAmount').value=state.target||'';
+}
+function renderMissions(){
+ const arr=state.missions.filter(m=>m.date===today());$('missionCount').textContent=arr.filter(m=>m.done).length+' / '+arr.length;
+ $('missionList').innerHTML=arr.length?arr.map(m=>`<label class="checkline ${m.done?'done':''}"><input type="checkbox" ${m.done?'checked':''} onchange="toggleMission('${m.id}',this.checked)"><span>${esc(m.text)}</span><button class="btn ghost small" type="button" onclick="removeItem('missions','${m.id}')">削除</button></label>`).join(''):listEmpty('今日のミッションを追加してね');
+ const c=calcStreak();$('streakBig').textContent=c.streak+'日';$('bestStreak').textContent=c.best+'日';
+}
+function render(){updateHeader();renderStudy();renderSchool();renderDream();renderMoney();renderMissions();save()}
+function toggleMission(id,done){const m=state.missions.find(m=>m.id===id);if(m)m.done=done;render()}
+function togglePrep(i,v){state.prep[i]=v;save();renderSchool()}
+window.toggleMission=toggleMission;window.togglePrep=togglePrep;window.removeItem=removeItem;
+const id=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+function setDateDefaults(){['studyDate','diaryDate','moneyDate','missionDate','schoolDate'].forEach(x=>$(x).value=today());}
+$('studyForm').addEventListener('submit',e=>{e.preventDefault();state.studies.push({id:id(),date:$('studyDate').value,minutes:Number($('studyMinutes').value),subject:$('studySubject').value.trim(),memo:$('studyMemo').value.trim()});e.target.reset();$('studyDate').value=today();save();render()});
+$('wordForm').addEventListener('submit',e=>{e.preventDefault();state.words.push({id:id(),ko:$('wordKo').value.trim(),ja:$('wordJa').value.trim(),memo:$('wordMemo').value.trim()});e.target.reset();render()});
+$('schoolForm').addEventListener('submit',e=>{e.preventDefault();state.schools.push({id:id(),name:$('schoolName').value.trim(),area:$('schoolArea').value.trim(),date:$('schoolDate').value,topic:$('schoolTopic').value,status:$('schoolStatus').value,source:$('schoolSource').value.trim(),memo:$('schoolMemo').value.trim()});e.target.reset();$('schoolDate').value=today();render()});
+$('goalForm').addEventListener('submit',e=>{e.preventDefault();state.goal={name:$('goalName').value.trim(),date:$('goalDate').value};render()});
+$('clearGoal').addEventListener('click',()=>{state.goal={name:'',date:''};$('goalName').value='';$('goalDate').value='';render()});
+$('diaryForm').addEventListener('submit',async e=>{e.preventDefault();const file=$('diaryPhoto').files[0];let photo='';if(file){try{photo=await resizeImage(file)}catch(err){alert('写真を読み込めませんでした');return}}state.diaries.push({id:id(),date:$('diaryDate').value,mood:$('diaryMood').value,title:$('diaryTitle').value.trim(),text:$('diaryText').value.trim(),photo});e.target.reset();$('diaryDate').value=today();render()});
+function resizeImage(file){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onerror=reject;reader.onload=()=>{const img=new Image();img.onerror=reject;img.onload=()=>{const max=900,scale=Math.min(1,max/Math.max(img.width,img.height)),canvas=document.createElement('canvas');canvas.width=Math.round(img.width*scale);canvas.height=Math.round(img.height*scale);canvas.getContext('2d').drawImage(img,0,0,canvas.width,canvas.height);resolve(canvas.toDataURL('image/jpeg',.78))};img.src=reader.result};reader.readAsDataURL(file)})}
+$('budgetForm').addEventListener('submit',e=>{e.preventDefault();state.target=Math.max(0,Number($('targetAmount').value||0));render()});
+$('moneyForm').addEventListener('submit',e=>{e.preventDefault();state.money.push({id:id(),date:$('moneyDate').value,amount:Number($('moneyAmount').value),note:$('moneyNote').value.trim()});e.target.reset();$('moneyDate').value=today();render()});
+$('missionForm').addEventListener('submit',e=>{e.preventDefault();state.missions.push({id:id(),date:$('missionDate').value,text:$('missionText').value.trim(),done:false});e.target.reset();$('missionDate').value=today();render()});
+$('addDefaults').addEventListener('click',()=>{const defaults=['韓国語を10分勉強する','新しい単語を3つ覚える','韓国の高校について1つ調べる'];defaults.forEach((text,i)=>{if(!state.missions.some(m=>m.date===today()&&m.text===text))state.missions.push({id:id(),date:today(),text,done:false})});render()});
+setDateDefaults();
+$('goalName').value=state.goal.name||'';$('goalDate').value=state.goal.date||'';
+render();
+</script>
+</body>
+</html>
